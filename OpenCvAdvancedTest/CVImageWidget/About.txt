@@ -1,0 +1,31 @@
+﻿Integrating OpenCV in Qt GUI applications
+-----------------------------------------
+[1] Target :
+with "CVImageWidget" class,
+you can make a "Widget" to show
+"OpenCV" image in Qt application with QImage.
+
+[2] Dependencies :
+In .Pro File : QT += core gui widgets
+OpenCV Libs
+
+[3] To use it for show Vides frames (or WebCam) :
+with " cv::VideoCapture"
+Add in (.pro) :
+	LIBS += $$OPENCV_PATH/mybuild/bin/libopencv_videoio320.dll
+And in Class:
+	#include <opencv2/highgui/highgui.hpp>
+
+#ZAKI
+http://develnoter.blogspot.com/2012/05/integrating-opencv-in-qt-gui.html
+-----------------------------------------
+
+
+
+The idea is to have a Qt QWidget class (the base class for all the UI elements in Qt) which is able to display OpenCV images. Qt has the ability to display objects of the type QImage via the QPainter::drawImage() method. Of course, a QImage is no OpenCV image...
+
+Luckily the QImage class has support for in-memory construction, that is, you can assign a QImage to an existing image stored in the memory. But, unluckily, QImage only supports a set of image formats which are not OpenCV's defaults. By default, OpenCV stores color images in memory using the BGR byte ordering instead of RGB which is the format supported by QImage. Also, if you want to display grayscale images, QImage doesn't support regular, 8-bit grayscale images.
+
+For these reasons, some conversion needs to be done prior to displaying, so we can assign a OpenCV image buffer to a QImage.
+
+With this in mind, let's build our QWidget class that displays OpenCV images. It will store internally a QImage which will point to a converted OpenCV image, The QWidget should be able to update the image, so we can display video on the widget itself.

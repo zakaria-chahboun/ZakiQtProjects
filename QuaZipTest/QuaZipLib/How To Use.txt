@@ -1,0 +1,51 @@
+﻿to use QuaZip in Qt5, copy this folder in your project
+open ".pro" file, and add this lines :
+---------------------------------------
+INCLUDEPATH += "$$PWD/QuaZipLib/include"
+LIBS += -L"$$PWD/QuaZipLib/lib"
+LIBS += -lquazip -lzlib1
+---------------------------------------
+
+and include header to your source code :
+---------------------------------------
+#include <QZXing.h>
+---------------------------------------
+
+Example :
+
+    QImage imageToDecode(filename);
+    QZXing decoder;
+    decoder.setDecoder(QZXing::DecoderFormat_QR_CODE);
+    QString result = decoder.decodeImage(imageToDecode);
+
+    QMessageBox::information(this,"QR Code",result);
+
+**************************************************************
+More :
+to scan frames from a live video / camera
+you can use QZXing with QZXingFilter
+
+" #include <QZXingFilter.h> "
+
+a QAbstractVideoFilter implementation to provide a
+mean of providing live feed to the decoding library. It automatically includes QML
+implementation as well
+
+So you have to add this lines in ".pro"
+
+--------------------------------------------------
+QT       +=  multimedia
+CONFIG += qzxing_multimedia
+--------------------------------------------------
+
+
+/*
+
+for more about QZXingFilter :
+https://www.kdab.com/efficient-barcode-scanning-qzxing/
+
+this infos is write by zakaria chahboun | 23/11/2017 1:21
+
+All right reserved to :
+https://github.com/ftylitak/qzxing
+*/

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>start.png</file>
+        <file>stop.png</file>
+        <file>QrCodeIcon.jpg</file>
+        <file>update icon.png</file>
+        <file>QrcodeZakiCorporationLogo.png</file>
+        <file>QrLogoZaki.png</file>
+        <file>Account Zaki.png</file>
+        <file>CapIcon.png</file>
+        <file>DocIcon.png</file>
+        <file>PicIcon.png</file>
+    </qresource>
+</RCC>

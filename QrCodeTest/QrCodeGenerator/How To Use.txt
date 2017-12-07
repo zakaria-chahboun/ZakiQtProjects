@@ -1,0 +1,37 @@
+﻿to use QrCode Generator in Qt5, copy this folder in your project
+open ".pro" file, and add this lines :
+---------------------------------------
+SOURCES +=	QrCodeGenerator/BitBuffer.cpp \
+		QrCodeGenerator/QrCode.cpp \
+		QrCodeGenerator/QrSegment.cpp
+
+HEADERS  +=	QrCodeGenerator/BitBuffer.hpp \
+		QrCodeGenerator/QrCode.hpp \
+		QrCodeGenerator/QrSegment.hpp
+---------------------------------------
+
+and include header to your source code :
+---------------------------------------
+#include <QrCodeGenerator/QrCode.hpp>
+---------------------------------------
+
+Example :
+
+    // Simple operation
+    /* Get Text From User */
+    QString mytext = "ZAKI123";
+    QByteArray text = mytext.toLatin1();
+    /* Generate QR Code */
+    QrCode qr = QrCode::encodeText(text.data(), QrCode::Ecc::HIGH);
+
+    /* Get SVG text code */
+    QString svg;
+    std::string cc = qr.toSvgString(2); // border = 2 or any :)
+    svg = QString::fromStdString(cc); // svg image code :)
+
+/*
+this infos is write by zakaria chahboun | 23/11/2017 00:56
+
+All right reserved to :
+https://www.nayuki.io/page/qr-code-generator-library
+*/
