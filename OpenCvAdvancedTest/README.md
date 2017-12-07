@@ -29,7 +29,7 @@ LIBS += $$OPENCV_PATH/mybuild/bin/libopencv_objdetect320.dll
 > Note : Change `OPENCV_PATH` With Your (OpenCV Path), Also Change `LIBS += $$OPENCV_PATH/mybuild/bin/` With Correct Path :innocent:
 
 -----------------
-<img src="/master/View.JPG">
+<img src="/View.JPG">
 
 -----------------
 
