@@ -1,6 +1,6 @@
 # Qt5 Projects
 
-<img src="/master/IMAGE1.PNG">
+<img src="/master/IMAGE1.png">
 
 All About Qt5/QML Projects ^^
 
