@@ -1,6 +1,7 @@
 # Qt5 Projects
+## ZAKI
 
-<img src="/master/IMAGE1.png">
+<img src="/master/IMAGE1.PNG">
 
 All About Qt5/QML Projects ^^
 
