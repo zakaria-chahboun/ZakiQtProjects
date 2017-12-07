@@ -1,15 +1,15 @@
 # Qt5 Projects
 
-<img src="master/IMAGE1.PNG">
+<img src="/master/IMAGE1.PNG">
 
 All About Qt5/QML Projects ^^
 
-<img src="master/IMAGE2.PNG">
+<img src="/master/IMAGE2.PNG">
 
 -----------------
 by Zakaria Chahboun 2017
 
-<img src="master/IMAGE3.PNG">
+<img src="/master/IMAGE3.PNG">
 
 -----------------
 
