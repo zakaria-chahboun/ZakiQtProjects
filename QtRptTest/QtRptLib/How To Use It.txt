@@ -1,0 +1,29 @@
+﻿To Use QtRPT in Qt5, copy this folder in your project
+open ".pro" file, and add this lines :
+---------------------------------------
+INCLUDEPATH += "$$PWD/QtRptLib/include"
+LIBS += -L"$$PWD/QtRptLib/lib"
+LIBS += -lQtRPT
+---------------------------------------
+
+And include header to your source code :
+---------------------------------------
+#include <qtrpt.h>
+---------------------------------------
+
+Example :
+
+
+
+--------------------------------------------------
+QT       += gui xml script sql printsupport
+--------------------------------------------------
+
+(Mode Realse)
+
+/*
+
+For more about QtRPT, read the "readme.pdf" book.
+
+Zakaria Chahboun | 02/02/2018 14:51
+*/

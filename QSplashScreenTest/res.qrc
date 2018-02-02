@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>spsc.png</file>
+    </qresource>
+</RCC>

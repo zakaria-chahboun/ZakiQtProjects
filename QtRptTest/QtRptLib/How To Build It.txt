@@ -1,0 +1,28 @@
+﻿How To Build QtRPT v2.0.1
+Go to : "https://sourceforge.net/projects/qtrpt/"
+Choose : "QtRptProject 2.0.1.zip"
+Unzip it
+
+So "We just need to QtRPT Core, No Barcode No Exel file" :)
+For that, Go to your project fiolder, copy "QtRptProject" folder into,
+And add this line to -your- (.pro) file:
+-------------------------------------------
+include($$PWD/QtRptProject/QtRPT/QtRPT.pro)
+-------------------------------------------
+
+Go to "config.pri", and Un-remark this line :
+------------------------
+DEFINES += QTRPT_LIBRARY
+DEFINES += NO_BARCODE
+------------------------
+
+:)
+Start Building .. (Mode Realse)
+When You Finish, Go to "QtRptProject\bin\release\lib"
+And Get Your Library "QtRPT.DLL".
+
+/*
+Zaki
+
+Zakaria Chahboun 02/02/2018 - 14:43
+*/
