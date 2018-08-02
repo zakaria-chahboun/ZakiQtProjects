@@ -6,7 +6,8 @@
 <img src='https://raw.githubusercontent.com/zakaria-chahboun/ZakiQtProjects/master/IMAGE1.png' />
 
 **QrCode Generator** and **Scanner** v1.0
-Created by C++ and Qt5 framework!
+
+***Created by C++ and Qt5 framework!***
 <br>
 <br>
 
