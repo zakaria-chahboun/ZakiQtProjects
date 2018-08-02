@@ -35,6 +35,8 @@
 - About
 <img src='https://raw.githubusercontent.com/zakaria-chahboun/ZakiQtProjects/master/QrCodeTest/07.PNG' />
 
+**Download Link :  <a href='https://drive.google.com/open?id=1KOxyxWi-e0w_91NDCTMzhTDUfA38Nd9i'>HERE!</a>**
+
 ---------------------------
 <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/1259px-Twitter_Bird.svg.png" width="20px"> <a href="https://twitter.com/Zaki_Chahboun">@Zaki_Chahboun</a>
 <br>
